@@ -13,6 +13,44 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modalwindow">
             <button class="clsbtn" data-modal-close></button>
+
+            <h2 class="title modalwindow-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="form">
+                <label class="form-field form-dane">
+                    <span class="form-label">Имя</span>
+                    <svg class="icon-modal icon-person-black">
+                        <use href="./symbol-defs-modal.svg#icon-person-black"></use>
+                    </svg>
+                    <input type="text" class="form-input" name="name">
+                </label>
+                <label class="form-field form-dane">
+                    <span class="form-label">Телефон</span>
+                    <svg class="icon-modal icon-person-black">
+                        <use href="./symbol-defs-modal.svg#icon-phone-black"></use>
+                    </svg>
+                    <input type="tel" class="form-input" name="tel">
+                </label>
+                <label class="form-field form-dane">
+                    <span class="form-label">Почта</span>
+                    <svg class="icon-modal icon-person-black">
+                        <use href="./symbol-defs-modal.svg#icon-email-black"></use>
+                    </svg>
+                    <input type="email" class="form-input" name="email">
+                </label>
+                <label class="form-field form-comment">
+                    <span class="form-label">Комментарий</span>
+                    <textarea name="comment" class="form-input" placeholder="Введите текст"></textarea>
+                </label>
+
+                <label class="form-field form-checkbox">
+                    <input type="checkbox" class="checkbox visualy-hidden" name="policity" value="yes">
+                    <span class="icon-checkbox"></span>
+                    <span class="form-label policity">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+                </label>
+
+                <button class="button-hero" type="submit">Отправить</button>
+                
+            </form>
         </div>
     </div>
     
