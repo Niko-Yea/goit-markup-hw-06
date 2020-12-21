@@ -12,30 +12,34 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modalwindow">
-            <button class="clsbtn" data-modal-close></button>
+            <button class="clsbtn" data-modal-close>
+                <svg class="icon-clsbtn">
+                    <use href="./symbol-defs-modal.svg#icon-x"></use>
+                </svg>
+            </button>
 
             <h2 class="title modalwindow-title">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="form">
                 <label class="form-field form-dane">
                     <span class="form-label">Имя</span>
+                    <input type="text" class="form-input" name="name">
                     <svg class="icon-modal icon-person-black">
                         <use href="./symbol-defs-modal.svg#icon-person-black"></use>
                     </svg>
-                    <input type="text" class="form-input" name="name">
                 </label>
                 <label class="form-field form-dane">
                     <span class="form-label">Телефон</span>
+                    <input type="tel" class="form-input" name="tel">
                     <svg class="icon-modal icon-person-black">
                         <use href="./symbol-defs-modal.svg#icon-phone-black"></use>
                     </svg>
-                    <input type="tel" class="form-input" name="tel">
                 </label>
                 <label class="form-field form-dane">
                     <span class="form-label">Почта</span>
+                    <input type="email" class="form-input" name="email">
                     <svg class="icon-modal icon-person-black">
                         <use href="./symbol-defs-modal.svg#icon-email-black"></use>
                     </svg>
-                    <input type="email" class="form-input" name="email">
                 </label>
                 <label class="form-field form-comment">
                     <span class="form-label">Комментарий</span>

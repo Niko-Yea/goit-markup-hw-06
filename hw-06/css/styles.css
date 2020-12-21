@@ -340,13 +340,19 @@ p{
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
     background-color: var(--main-bg);
-    background-image: url(../img/original-svg/x.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 
     cursor: pointer;
+}
+
+.clsbtn:hover .icon-clsbtn{
+    fill: var(--accent);
+}
+
+.icon-clsbtn{
+    width: 11px;
+    height: 11px;
+    transition: fill 250ms var(--cubic-function);
 }
 
 .backdrop.is-hidden{
@@ -381,6 +387,16 @@ p{
     border-radius: 4px;
     height: 40px;
     padding: 12px 16px;
+}
+
+.form-input:focus-within{
+    outline: none;
+    border: 1px solid var(--accent);
+    transition: border 250ms var(--cubic-function);
+}
+
+.form-input:focus-within + .icon-modal{
+    fill: var(--accent);
 }
 
 .form-dane .form-input{
@@ -460,6 +476,7 @@ textarea::placeholder{
     left: 12px;
     width: 18px;
     height: 18px;
+    transition: fill 250ms var(--cubic-function);
 }
 
 
