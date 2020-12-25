@@ -512,22 +512,33 @@ textarea::placeholder{
 }
 
 .form-field .policity{
+    outline: 2px solid tomato;
+    position: relative;
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.icon-checkbox{
-    margin-right: 8px;
+
+.form-field .policity::before{
+    position: absolute;
+    left: -21px;
+    top:50%;
+    transform: translateY(-50%);
+    content:'';
     width: 16px;
     height: 15px;
-    background-image: url(../img/original-svg/icon-check-off.svg);
-    transition: background-image 250ms var(--cubic-function);
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    background: var(--main-bg) center;
+    transition: border 2500ms var(--cubic-function),
+                background 2500ms var(--cubic-function);
 }
 
-.checkbox:checked + .icon-checkbox{
-    background-image: url(../img/original-svg/icon-check-on.svg);
+.checkbox:checked + .policity::before{
+    border: 2px solid var(--accent);
+    background: var(--accent) url(../img/original-svg/icon-check.svg) no-repeat center;
 }
 
 .form .button{
