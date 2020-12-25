@@ -523,7 +523,7 @@ textarea::placeholder{
 
 .form-field .policity::before{
     position: absolute;
-    left: -21px;
+    left: -20px;
     top:50%;
     transform: translateY(-50%);
     content:'';
@@ -531,14 +531,15 @@ textarea::placeholder{
     height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
-    background: var(--main-bg) center;
-    transition: border 2500ms var(--cubic-function),
-                background 2500ms var(--cubic-function);
+    background: center;
+    transition: border 250ms var(--cubic-function),
+                background 250ms var(--cubic-function);
 }
 
 .checkbox:checked + .policity::before{
     border: 2px solid var(--accent);
     background: var(--accent) url(../img/original-svg/icon-check.svg) no-repeat center;
+
 }
 
 .form .button{
