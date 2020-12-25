@@ -512,7 +512,7 @@ textarea::placeholder{
 }
 
 .form-field .policity{
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     position: relative;
     font-family: Roboto;
     font-weight: 400;
